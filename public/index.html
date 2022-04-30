@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <title>SAPUI5 Walkthrough</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-Website is working.
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>My Task Plan</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">My Task Plan LOGO</a>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__img">
+                        <img src="assets/img/asset1.png"  style="z-index: 33;" alt="" data-speed="2" class="move">
+                        <img src="assets/img/asset2.png" style="z-index: 10;" alt="" data-speed="1" class="move">
+                        <img src="assets/img/asset3.png" style="z-index: 33;" alt="" data-speed="-2" class="move">
+                        <img src="assets/img/asset4.png" style="z-index: 33;" alt="" data-speed="-2" class="move">
+                        <img src="assets/img/asset5.png" style="z-index: 33;" alt="" data-speed="1" class="move">
+                        <img src="assets/img/asset6.png" style="z-index: 33;" alt="" data-speed="1" class="move">
+                        <img src="assets/img/asset7.png" style="z-index: 2;" alt="" data-speed="1" class="move">
+                        <img src="assets/img/asset8.png" style="z-index: 2;" alt="" data-speed="1" class="move">
+                        <img src="assets/img/asset9.png" style="z-index: 2;" alt="" data-speed="1" class="move">
+                        <img src="assets/img/asset10.png" style="z-index: 33;" alt="" data-speed="1" class="move">
+                        <img src="assets/img/asset11.png" style="z-index: 33;" alt="" data-speed="2" class="move">
+                        <img src="assets/img/asset12.png" style="z-index: 0;" alt="" data-speed="-1" class="move">
+                        <img src="assets/img/asset13.png" style="z-index:-1;" alt="" data-speed="2" class="move">
+                        <img src="assets/img/asset14.png" style="z-index: 2;" alt="" data-speed="2" class="move">
+                        <img src="assets/img/asset15.png" style="z-index: -1;" alt="" data-speed="2" class="move">
+                        <img src="assets/img/asset16.png" style="z-index: -2;" alt="" data-speed="2" class="move">
+                
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Achive Your <br>  Goals</h1>
+                        <p class="home__description"> Get more done with <br> My Task Plan</p>
+                        <a href="#" class="home__button">Register</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== GSAP =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
